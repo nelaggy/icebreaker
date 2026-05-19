@@ -1,3 +1,22 @@
+# GB3 iCEBreaker Intro Project
+
+## Setup
+
+- Follow the pdf instructions `stopwatch\icebreaker-fpga-stopwatch-workshop.pdf` to setup the `OSS CAD Suite`
+- Extract the `zip` or `targz` file, run the environment file `.bat` or `.ps1`
+  - For linting, the `OSS CAD Suite` should already come with `iverilog`
+  - For formatting, we'll have to download Google's `verible` separately
+
+### Windows
+- We'll need `make` to use `make prog`
+- On windows, `make` might not be default installed so you might have to install `choco` and `make` first
+
+The OSS CAD Suite `environment.bat` overwrites your system PATH, which drops `make` and other tools. Each time you open a terminal, run:
+```cmd
+C:\path\to\oss-cad-suite\environment.bat
+set PATH=%PATH%;C:\ProgramData\chocolatey\bin
+```
+
 ## iCEBreaker FPGA Workshop
 
 Welcome to the iCEBreaker FPGA workshop repository.

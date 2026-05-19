@@ -6,7 +6,7 @@ module top (
 	input  CLK,
 	input  BTN_N, BTN1, BTN2, BTN3,
 	output LED1, LED2, LED3, LED4, LED5,
-	output P1A1, P1A2, P1A3, P1A4, P1A7, P1A8, P1A9, P1A10,
+	output P1A1, P1A2, P1A3, P1A4, P1A7, P1A8, P1A9, P1A10
 );
 	// 7 segment control line bus
 	wire [7:0] seven_segment;

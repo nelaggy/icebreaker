@@ -5,3 +5,6 @@
 *.asc
 *.nplog
 *.rpt
+
+#keep all in vsc
+!.vscode/**

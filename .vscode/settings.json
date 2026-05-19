@@ -1,0 +1,8 @@
+//this git tracked file sets up verilog linting formatting etc in VS Code
+{
+  // Verilog linting with iverilog. Comes with OSS CAD Suite
+  "verilog.linting.linter": "iverilog",
+  "verilog.linting.iverilog.arguments": "-Wall -g2012",
+
+  // Formatting Setup: TODO:
+}
