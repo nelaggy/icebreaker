@@ -2,7 +2,9 @@
 `default_nettype none
 
 // Project entry point
-module top (
+module top #(
+	parameter integer CLKDIV_MAX = 1_199_999
+) (
 	input  CLK,
 	input  BTN_N, BTN1, BTN2, BTN3,
 	output LED1, LED2, LED3, LED4, LED5,
@@ -52,7 +54,7 @@ module top (
 			lap_timeout <= 20;
 		end
 		// Clock divider pulse generator
-		if (clkdiv == 1200000) begin
+		if (clkdiv == CLKDIV_MAX) begin
 			clkdiv <= 0;
 			if (lap_timeout) begin
 			lap_timeout <= lap_timeout - 1;
