@@ -5,6 +5,9 @@
 *.asc
 *.nplog
 *.rpt
+*.vcd
+*.vvp
+.DS_Store
 
 #keep all in vsc
 !.vscode/**
